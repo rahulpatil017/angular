@@ -1,0 +1,24 @@
+h4 {
+  color: white
+}
+
+h6 {
+  color: white;
+  margin-top: 20px;
+  text-wrap: normal
+}
+
+h1 {
+  color: white;
+  margin-top: 30px
+}
+
+img {
+  margin-top: 30px;
+  margin-left: 200px
+}
+
+button {
+  margin-top: 30px;
+  margin-right: 20px
+}

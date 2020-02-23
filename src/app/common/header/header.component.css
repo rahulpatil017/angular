@@ -1,0 +1,54 @@
+/*ul {
+  margin: 10px 10px 10px 10px;
+}*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+}
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: xx-large
+  }
+
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+      background-color: #111;
+    }
+
+.socialfloat {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  z-index: 9999;
+}
+
+  .socialfloat .fbtn {
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+
+    .socialfloat .fbtn i {
+      font-size: 30px;
+      line-height: 50px;
+    }
+
+.linkedin {
+  background-color: #0077b5;
+}
