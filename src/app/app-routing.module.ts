@@ -5,22 +5,29 @@ import { ListComponent } from './modules/test/list/list.component';
 import { AdditemComponent } from './modules/test/additem/additem.component';
 import { MasterRoutes, ChildRoutes } from './core/constants/route.constant';
 import { HeaderComponent } from './common/header/header.component';
+import { MainComponent } from './common/main/main.component';
+import { ProjectsComponent } from './modules/profile/projects/projects.component';
+import { ResumeComponent } from './modules/profile/resume/resume.component';
+import { CertificationsComponent } from './modules/profile/certifications/certifications.component';
+import { ConnectComponent } from './modules/profile/connect/connect.component';
+import { PagenotfoundComponent } from './common/pagenotfound/pagenotfound.component';
 
 const routes: Routes = [
-
-  { path: '', component: HeaderComponent },
-  //{
-  //  path: MasterRoutes.Family, component: TabsComponent, children: [
-  //    { path: '', redirectTo: 'all', pathMatch: 'full' },
-  //    { path: ':side', component: ListComponent }
-  //  ]
-  //},
-  //{ path: MasterRoutes.AddFamily, component: AdditemComponent },
-  { path: '**', redirectTo: '/' }
-
+  { path: 'main', component: MainComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'resume', component: ResumeComponent },
+  { path: 'certifications', component: CertificationsComponent },
+  { path: 'connect', component: ConnectComponent },
+  {
+    path: '',
+    redirectTo: 'main',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PagenotfoundComponent }
 ];
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

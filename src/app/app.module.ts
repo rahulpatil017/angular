@@ -12,6 +12,11 @@ import { ItemComponent } from './modules/test/item/item.component';
 import { CoreModule } from './core/core.module';
 import { AdditemComponent } from './modules/test/additem/additem.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PagenotfoundComponent } from './common/pagenotfound/pagenotfound.component';
+import { ProjectsComponent } from './modules/profile/projects/projects.component';
+import { ResumeComponent } from './modules/profile/resume/resume.component';
+import { CertificationsComponent } from './modules/profile/certifications/certifications.component';
+import { ConnectComponent } from './modules/profile/connect/connect.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { AppRoutingModule } from './app-routing.module';
     TabsComponent,
     ListComponent,
     ItemComponent,
-    AdditemComponent    
+    AdditemComponent,
+    PagenotfoundComponent,
+    ProjectsComponent,
+    ResumeComponent,
+    CertificationsComponent,
+    ConnectComponent
   ],
   imports: [
     BrowserModule,
